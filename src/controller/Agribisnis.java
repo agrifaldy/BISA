@@ -129,8 +129,6 @@ public class Agribisnis implements Initializable {
                 Scene scene = new Scene(Beranda);
                 Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
                 window.setScene(scene);
-                //window.initModality(Modality.APPLICATION_MODAL);
-                //window.initStyle(StageStyle.UNDECORATED);
                 window.show();
     }
 }

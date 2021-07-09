@@ -102,7 +102,15 @@ public class Nav implements Initializable {
         line.setVisible(true);
         line.setLayoutY(420);
     }
-    
+    @FXML
+    public void Artikel(ActionEvent event) throws IOException {
+        Parent beranda = FXMLLoader.load(getClass().getResource("/view/Artikel.fxml"));
+                javafx.scene.Scene scene = new javafx.scene.Scene(beranda);
+                Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+                window.setScene(scene);
+                window.show();
+                duO.setUserName(duO.getUserName());
+    }
     @FXML
     public void Keluar(ActionEvent event) throws IOException {
         Parent beranda = FXMLLoader.load(getClass().getResource("/view/Login.fxml"));
@@ -110,7 +118,7 @@ public class Nav implements Initializable {
                 Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
                 window.setScene(scene);
                 window.show();
-                duO.setUserName("");
+                duO.setUserName(duO.getUserName());
                 saveUserOnline();
     }
     
@@ -153,6 +161,7 @@ public class Nav implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        // TODO
         readUser();
         label.setText("Selamat datang, "+duO.getUserName());
         Scene object = new Scene();

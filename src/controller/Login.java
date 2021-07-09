@@ -82,12 +82,10 @@ public class Login implements Initializable {
     @FXML
     public void loginButton(ActionEvent event) throws IOException {
         Parent login = FXMLLoader.load(getClass().getResource("/view/Nav.fxml"));
-        readUser();
         Iterator<DataUser> itr;
         DataUser du = new DataUser();
         DataUserList dul = new DataUserList();
         List<DataUser> data= new ArrayList();
-        //System.out.println(uName.getText());
         dul.getReadData();
         data = (dul.getReadData());
         itr = data.iterator();
@@ -96,7 +94,6 @@ public class Login implements Initializable {
             DataUser du1 = itr.next();
             
             if(uName.getText().equals(du1.getUserName()) && pass.getText().equals(du1.getPassword())){
-                //dul.addDataLogin(uName1.getText(), pass1.getText());
                 duO.setUserName(uName.getText());
                 saveUserOnline();
                 Scene scene = new Scene(login);

@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="BISA.jar" size="1548459" download="eager" />
+    <jar href="BISA.jar" size="2406357" download="eager" />
     <jar href="lib\jfoenix-8.0.8.jar" size="2708772" download="eager" />
     <jar href="lib\xstream-1.4.10.jar" size="589803" download="eager" />
   </resources>

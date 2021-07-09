@@ -43,7 +43,7 @@
             <PasswordField fx:id="pass1" layoutX="544.0" layoutY="210.0" prefHeight="25.0" prefWidth="294.0" promptText="Password" />
             <Label fx:id="label" layoutX="545.0" layoutY="335.0" prefHeight="17.0" prefWidth="294.0" textFill="#ee4949" />
             <Label fx:id="label2" layoutX="31.0" layoutY="644.0" prefHeight="17.0" prefWidth="294.0" textFill="#ee4949" />
-            <Text fill="#ab19b9" layoutX="568.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Anda punya ide atau bingung mencari ide untuk memuli UKM? BISA adalah solusinya! Anda dapat melihat ide-ide UKM hingga berdiskusi mengenai ide UKM tersebut." textAlignment="JUSTIFY" wrappingWidth="245.30371969938278">
+            <Text fill="#ab19b9" layoutX="568.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Anda punya ide atau bingung mencari ide untuk memulai UKM? BISA adalah solusinya! Anda dapat melihat ide-ide UKM hingga berdiskusi mengenai ide UKM tersebut." textAlignment="JUSTIFY" wrappingWidth="245.30371969938278">
                <font>
                   <Font name="Comic Sans MS" size="14.0" />
                </font>

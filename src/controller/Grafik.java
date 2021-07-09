@@ -47,22 +47,13 @@ import model.DataUserList;
 public class Grafik implements Initializable {
     
     ObservableList<PieChart.Data> dataPiePostingan = FXCollections.observableArrayList();
-    //ObservableList<PieChart.Data> dataPieGender = FXCollections.observableArrayList();
+    
     
     @FXML
     private BarChart<?, ?> barChart;
     
     @FXML
     private PieChart pieChartPostingan;
-    
-    @FXML
-    private PieChart pieChartGender;
-    
-    @FXML
-    private ChoiceBox choiceJumlah = new ChoiceBox();
-    
-    @FXML
-    private ChoiceBox choiceUsia = new ChoiceBox();
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -72,7 +63,7 @@ public class Grafik implements Initializable {
         dataPostingan.readData();
         dataPostingan.loadXMLFile();
         
-        //XYChart.Series dataSeries = new XYChart.Series();
+        
         Iterator<DataPostingan> itr;
         dataPostingan.setFromArray(dataPostingan.getArray());
         
@@ -84,11 +75,11 @@ public class Grafik implements Initializable {
         kuliner=0;
         fashion=0;
         agribisnis=0;
-        //System.out.println(da.getJudul());
+        
         
         while(itr.hasNext() == true){
             DataPostingan dp1 = itr.next();
-                //System.out.println(dp1.getA());
+                
                 if(dp1.getKategori().equals(dp1.getA())){
                     kuliner++;
                 }else if(dp1.getKategori().equals(dp1.getB())){
@@ -103,9 +94,9 @@ public class Grafik implements Initializable {
         dataSeries.getData().add(new XYChart.Data("Fashion", fashion));
         dataSeries.getData().add(new XYChart.Data("Agribisnis", agribisnis));
         dataSeries.setName("Jumlah Postingan");
-        
        
         barChart.getData().addAll(dataSeries);
+        
         
         double total = kuliner+fashion+agribisnis;
         double persentaseKuliner = (kuliner/total)*100;
@@ -118,8 +109,6 @@ public class Grafik implements Initializable {
         dataPiePostingan.add(new PieChart.Data("Agribisnis("+String.format("%.2f", persentaseAgribisnis)+"%)", agribisnis));
         
         pieChartPostingan.setData(dataPiePostingan);  
-        
-        
         
         
     }
