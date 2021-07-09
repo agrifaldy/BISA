@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1577.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Kuliner">
+   <children>
+      <Button fx:id="backButton" layoutX="55.0" layoutY="51.0" mnemonicParsing="false" onAction="#Beranda" prefHeight="54.0" prefWidth="119.0" styleClass="buttonungu" stylesheets="@cssTheme.css" text="Home" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Text fill="#ab19b9" layoutX="731.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kuliner">
+         <font>
+            <Font name="Comic Sans MS" size="36.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tb" layoutX="266.0" layoutY="352.0" prefHeight="327.0" prefWidth="1049.0" stylesheets="@cssTheme.css">
+        <columns>
+          <TableColumn fx:id="tb_judulPostingan" minWidth="0.0" prefWidth="255.66668701171875" text="Judul" />
+          <TableColumn fx:id="tb_user" prefWidth="136.0" text="Diposting oleh" />
+            <TableColumn fx:id="tb_deskripsiPostingan" prefWidth="322.0" text="Deskripsi" />
+            <TableColumn fx:id="tb_kontak" prefWidth="211.0" text="No.HP/Kontak" />
+            <TableColumn fx:id="tb_status" prefWidth="123.0" text="Status" />
+        </columns>
+      </TableView>
+      <Line endX="68.33334350585938" endY="71.0" layoutX="158.0" layoutY="80.0" startX="689.6666870117188" startY="71.0" stroke="#ab19b9" />
+      <Line endX="57.8333740234375" endY="-2.5" layoutX="168.0" layoutY="154.0" startX="57.833343505859375" startY="581.0" stroke="#ab19b9" />
+      <Line endX="47.333343505859375" endY="571.5" layoutX="178.0" layoutY="164.0" startX="1179.0" startY="571.5" stroke="#ab19b9" />
+      <Line endX="1179.7071533203125" endY="-12.626220703125" layoutX="178.0" layoutY="164.0" startX="1179.5" startY="571.0" stroke="#ab19b9" />
+      <Line endX="1197.0" endY="59.5" layoutX="160.0" layoutY="91.0" startX="687.0" startY="59.5" stroke="#ab19b9" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="712.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Chef-amico.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="66.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="715.0" prefWidth="1470.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Grafik">
+   <children>
+      <BarChart fx:id="barChart" barGap="5.0" categoryGap="5.0" layoutX="123.0" layoutY="152.0" prefHeight="433.0" prefWidth="589.0" stylesheets="@cssTheme.css" title="Data Kategori Postingan">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis minorTickCount="0" minorTickLength="0.0" side="LEFT" stylesheets="@cssTheme.css" tickUnit="0.0" />
+        </yAxis>
+      </BarChart>
+      <PieChart fx:id="pieChartPostingan" layoutX="762.0" layoutY="154.0" prefHeight="410.0" prefWidth="594.0" stylesheets="@cssTheme.css" title="Persentase Banyak Postingan" />
+   </children>
+</AnchorPane>

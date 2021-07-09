@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="715.0" prefWidth="1470.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditPostingan">
+   <children>
+      <Text fill="#ab19b9" layoutX="642.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Ide">
+         <font>
+            <Font name="Comic Sans MS" size="36.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tb" layoutX="222.0" layoutY="243.0" prefHeight="233.0" prefWidth="997.0" stylesheets="@cssTheme.css">
+        <columns>
+          <TableColumn fx:id="tb_judulPostingan" minWidth="0.0" onEditCommit="#editJudul" prefWidth="202.66668701171875" text="Judul" />
+            <TableColumn fx:id="tb_kontak" minWidth="0.0" onEditCommit="#editKontak" prefWidth="149.0" text="No.HP/Kontak" />
+          <TableColumn fx:id="tb_kategori" onEditCommit="#editKategori" prefWidth="178.0" text="Kategori" />
+            <TableColumn fx:id="tb_deskripsiPostingan" onEditCommit="#editDeskripsi" prefWidth="321.3333740234375" text="Deskripsi" />
+            <TableColumn fx:id="tb_status" onEditCommit="#editStatus" prefWidth="144.6666259765625" text="Status" />
+        </columns>
+      </TableView>
+      <Button fx:id="deleteButton" layoutX="1086.0" layoutY="514.0" mnemonicParsing="false" onAction="#delete" prefHeight="1.0" prefWidth="135.0" styleClass="buttonungu" stylesheets="@cssTheme.css" text="Hapus" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Button>
+      <Line endX="68.33334350585938" endY="71.0" layoutX="92.0" layoutY="35.0" startX="539.0" startY="71.0" stroke="#ab19b9" />
+      <Line endX="57.833343505859375" endY="61.5" layoutX="102.0" layoutY="45.0" startX="57.833343505859375" startY="581.0" stroke="#ab19b9" />
+      <Line endX="47.333343505859375" endY="571.5" layoutX="112.0" layoutY="55.0" startX="1179.0" startY="571.5" stroke="#ab19b9" />
+      <Line endX="1179.5" endY="51.0" layoutX="112.0" layoutY="55.0" startX="1179.5" startY="571.0" stroke="#ab19b9" />
+      <Line endX="1197.0" endY="59.5" layoutX="94.0" layoutY="46.0" startX="701.0" startY="59.66667175292969" stroke="#ab19b9" />
+      <Label fx:id="label" layoutX="173.0" layoutY="597.0" prefHeight="17.0" prefWidth="653.0" />
+      <Text fill="#ab19b9" layoutX="223.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Langsung klik ditabel untuk mengubah data ya&quot;">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

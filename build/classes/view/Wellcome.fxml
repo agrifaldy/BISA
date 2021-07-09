@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="715.0" prefWidth="1470.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Login">
+   <children>
+      <Group layoutX="343.0" layoutY="288.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="291.0" stroke="#ab19b9" strokeType="INSIDE" width="301.0" />
+            <Text fill="#ab19b9" layoutX="27.0" layoutY="103.5712890625" strokeType="OUTSIDE" strokeWidth="0.0" text="Anda punya ide atau bingung mencari ide untuk memuli UKM? BISA adalah solusinya! Anda dapat melihat ide-ide UKM hingga berdiskusi mengenai ide UKM tersebut." textAlignment="JUSTIFY" wrappingWidth="245.30371969938278">
+               <font>
+                  <Font name="Comic Sans MS" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <Text fill="#ab19b9" layoutX="516.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BISA">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="120.0" fitWidth="150.0" layoutX="380.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/BISA-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="480.0" fitWidth="486.0" layoutX="707.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/New%20idea-pana.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
